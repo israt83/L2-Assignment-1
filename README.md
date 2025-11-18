@@ -41,7 +41,7 @@ console.log(state);
 loading
 ```
 ## union  types in TypeScript
--- TypeScript-এ যদি কোনো ভেরিয়েবল, প্যারামিটার বা প্রপার্টি একাধিক টাইপের মান নিতে পারে, তখন union type ব্যবহার করা হয় |
+- TypeScript-এ যদি কোনো ভেরিয়েবল, প্যারামিটার বা প্রপার্টি একাধিক টাইপের মান নিতে পারে, তখন union type ব্যবহার করা হয় |
 
 #### উদাহরণ:  union types
 
@@ -64,7 +64,7 @@ Hello
 ```
 
 ## intersection types in TypeScript
--- TypeScript-এ একাধিক টাইপকে merge করে  একটি নতুন টাইপ তৈরী করা হয় Intersection type ব্যবহার করে।
+- TypeScript-এ একাধিক টাইপকে merge করে  একটি নতুন টাইপ তৈরী করা হয় Intersection type ব্যবহার করে।
 
 
 #### উদাহরণ:  intersection types
