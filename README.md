@@ -8,7 +8,7 @@
 
 ---
 
-### উদাহরণ: Numeric Enum 
+#### উদাহরণ: Numeric Enum 
 
 ```ts
 
@@ -21,10 +21,11 @@ let currentStatus: Status = Status.InProgress;
 console.log(currentStatus); 
 
 ```
+#### Output
 ```ts 
-Output: 1
+1
 ```
-### উদাহরণ: String Enum 
+#### উদাহরণ: String Enum 
 ```ts
 enum StatusString {
    Success = 'success',
@@ -35,7 +36,67 @@ enum StatusString {
 let state: StatusString = StatusString.Loading;
 console.log(state);
 ```
+#### Output
 ```ts
-Output: loading
+loading
+```
+## union  types in TypeScript
+-- TypeScript-এ যদি কোনো ভেরিয়েবল, প্যারামিটার বা প্রপার্টি একাধিক টাইপের মান নিতে পারে, তখন union type ব্যবহার করা হয় |
+
+#### উদাহরণ:  union types
+
+```ts
+let value: string | number;
+
+value = "Hello"; 
+console.log(value); 
+
+value = 10;  
+console.log(value); 
 
 
+```
+#### Output
+```ts
+Hello
+10
+
+```
+
+## intersection types in TypeScript
+-- TypeScript-এ একাধিক টাইপকে merge করে  একটি নতুন টাইপ তৈরী করা হয় Intersection type ব্যবহার করে।
+
+
+#### উদাহরণ:  intersection types
+```ts
+interface Person {
+  name: string;
+  age: number;
+}
+
+interface Employee {
+  employeeId: number;
+  role: string;
+}
+
+// Intersection type
+type EmployeePerson = Person & Employee;
+
+const sawaira: EmployeePerson = {
+  name: "Sawaira",
+  age: 30,
+  employeeId: 101,
+  role: "Developer"
+};
+
+console.log(sawaira);       
+```
+#### Output
+```ts
+{
+  name: "Sawaira",
+  age: 30,
+  employeeId: 101,
+  role: "Developer"
+}
+```

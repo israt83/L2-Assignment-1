@@ -123,11 +123,3 @@ var products = [
     { name: 'Bag', price: 50, quantity: 1, discount: 20 },
 ];
 // console.log(calculateTotalPrice(products));
-var status;
-(function (status) {
-    status["success"] = "success";
-    status["error"] = "error";
-    status["loading"] = "loading";
-})(status || (status = {}));
-var state = status.loading;
-console.log(state);

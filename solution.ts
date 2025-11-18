@@ -194,16 +194,6 @@ const products = [
 // console.log(calculateTotalPrice(products));
 
 
-enum status {
-   success = 'success',
-   error = 'error',
-   loading = 'loading',
-   
-
-}
-
-let state : status = status.loading;
-console.log(state);
 
 
 
