@@ -20,16 +20,12 @@ enum Status {
 let currentStatus: Status = Status.InProgress;
 console.log(currentStatus); 
 
-```ts
+```
+```ts 
 Output: 1
-
----
-
+```
 ### উদাহরণ: String Enum 
-
 ```ts
-
-
 enum StatusString {
    Success = 'success',
    Error = 'error',
@@ -37,7 +33,9 @@ enum StatusString {
 }
 
 let state: StatusString = StatusString.Loading;
-console.log(state); 
-
+console.log(state);
+```
 ```ts
-Output: 'loading'
+Output: loading
+
+
