@@ -79,7 +79,7 @@ interface Employee {
   role: string;
 }
 
-// Intersection type
+
 type EmployeePerson = Person & Employee;
 
 const sawaira: EmployeePerson = {
